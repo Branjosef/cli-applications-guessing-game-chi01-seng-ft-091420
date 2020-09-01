@@ -4,7 +4,7 @@ def run_guessing_game
 number = rand(7)+1
 puts "guess a number?"
 user_input = gets.chomp
-if user_input == "exit"
+if user_input === "exit"
   return "goodbye"
 end
 if user_input.to_i  == number
